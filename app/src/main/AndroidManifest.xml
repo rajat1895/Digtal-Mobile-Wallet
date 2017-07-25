@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rajat.digitalwallet">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_fingerprint">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChkBalanceActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.ChkBalanceActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SendmoneyActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.SendmoneyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RechargeActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.RechargeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OffersActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.OffersActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MobileRechargeActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.MobileRechargeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ElectricityActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.ElectricityActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LandlineActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.LandlineActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BroadbandActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.BroadbandActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddMoneyActivity" />
+        <activity android:name=".CheckoutActivity">
+            <intent-filter>
+                <action android:name="com.example.rajat.digitalwallet.BroadbandActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

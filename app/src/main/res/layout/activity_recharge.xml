@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.rajat.digitalwallet.RechargeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Get Exciting cashback on every recharge"
+        android:id="@+id/textView8"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="Mobile Recharge"
+        android:id="@+id/button"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:onClick="MobileRechargeActivity"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape"
+        android:text="Electricity"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button3"
+        android:onClick="ElectricityActivity"/>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape"
+        android:text="Landline"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="42dp"
+        android:onClick="LandlineActivity"/>
+
+    <Button
+
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:background="@drawable/buttonshape"
+        android:text="Broadband"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="46dp"
+
+        android:onClick="BroadbandActivity"/>
+
+
+</RelativeLayout>
